@@ -1,0 +1,38 @@
+!!!
+%html{:lang => "es"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title Login |
+    %link{:href => "css/materialize.css", :rel => "stylesheet"}/
+    %link{:href => "css/login.css", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}/
+    %script{:src => "js/materialize.min.js"}
+  %body{:style => "background:#eaeaea;"}
+    %div
+      #wrapper
+        %section.login_content
+          %form
+            %img.center{:height => " 150px", :href => "#", :src => "images/logoitsae.png"}/
+            %h1 Iniciar Sesión
+            %div
+              %input.validate{:placeholder => "Usuario", :required => "", :type => "text"}/
+            %div
+              %input{:placeholder => "Contraseña", :required => "", :type => "password"}/
+            %div
+              %button.btn.waves-effect.waves-light{:type => "submit"} Entrar
+              %a.reset_pass{:href => "#"} ¿Olvidó su contraseña?
+            .clearfix
+            .separator
+              %p.center
+                ¿Eres nuevo?
+                %a{:href => "#"} Crear una cuenta
+              .clearfix
+              %br/
+              %div
+                %i.material-icons{:style => " color:#e0d821; font-size: 23px;"} verified_user
+                %h1 Sistema de Acreditación ITSAE
+                / <p class="center">©2015 All Rights Reserved. Acreditation System  is a Materialize template. Privacy and Terms</p>
+        / form
